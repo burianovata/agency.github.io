@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900|Anton");
+body {
+  font-family: "Open Sans";
+  color: #555; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Anton"; }
+
+.heading {
+  font-family: "Anton";
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+
+.selected-text {
+  color: #d25b38; }
+
+.agency-button {
+  background-color: #d25b38;
+  padding: 1rem 3rem;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  border: 2px solid transparent; }
+  .agency-button.btn-bg-dark:hover {
+    background-color: #c44f2c; }
+  .agency-button:hover {
+    background-color: transparent;
+    border: 2px solid #fff; }
+  @media (max-width: 440px) {
+    .agency-button {
+      margin-bottom: 0.5rem;
+      margin-top: 1rem; } }
+
+/*****NAVBAR****/
+#main-nav {
+  position: absolute;
+  background-color: #333; }
+  @media only screen and (min-width: 992px) {
+    #main-nav {
+      background-color: transparent; } }
+
+li.nav-item {
+  font-family: "Anton";
+  text-transform: uppercase; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; }
+
+/*****HEADER****/
+header {
+  padding: 200px 0;
+  background-image: url("../img/header-img.png");
+  background-position: center center;
+  background-size: cover;
+  color: #fff; }
+
+/******ABOUT SECTION*****/
+.about-img, .blog-img, .contact-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover; }
+
+.about-img {
+  background-image: url("../img/about.png"); }
+
+.about-overflow, .icon-overflow {
+  position: absolute;
+  z-index: 1;
+  left: -15rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Anton"; }
+
+.about-overflow .about-overflow-heading {
+  text-align: right;
+  padding: 1rem 0; }
+.about-overflow hr {
+  background-color: #fff;
+  width: 100%; }
+
+.icon-overflow {
+  margin-top: 1.7rem;
+  left: -3rem; }
+  .icon-overflow img {
+    height: 70px;
+    width: 70px; }
+
+.about-description {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+@media (max-width: 992px) {
+  section#about {
+    padding: 1rem; }
+
+  .about-description {
+    margin: 0.5rem;
+    text-align: center; }
+
+  .about-img-section {
+    display: none; }
+
+  .about-overflow {
+    position: static;
+    color: #555;
+    margin: auto; }
+    .about-overflow .about-overflow-heading {
+      text-align: center;
+      padding-bottom: 0; }
+
+  .icon-overflow {
+    display: none; } }
+/******SERVICES SECTION*****/
+section#services {
+  padding: 3rem;
+  background-color: #f4f2f2; }
+
+.services-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  text-align: center; }
+  .services-card i {
+    margin-bottom: 1.5rem;
+    font-size: 3rem; }
+  .services-card h3 {
+    text-transform: uppercase;
+    color: #d25b38;
+    font-family: "Anton"; }
+
+@media (max-width: 992px) {
+  section#services {
+    padding: 1rem; } }
+/******BLOG SECTION*****/
+section#blog {
+  padding: 3rem; }
+  section#blog h3 {
+    font-family: "Anton";
+    font-size: 1.25rem; }
+
+.blog-overflow {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  color: #fff; }
+
+.blog-img {
+  background-image: url("../img/blog-4.png"); }
+
+@media (max-width: 992px) {
+  section#blog {
+    padding: 1rem; }
+
+  .post-column {
+    display: none; } }
+@media (max-width: 576px) {
+  .post {
+    text-align: center; }
+
+  .post-img {
+    text-align: center;
+    padding-bottom: 1rem; } }
+/******TEAM SECTION*****/
+section#team {
+  padding: 3rem;
+  background-color: #f4f2f2; }
+
+.team-member {
+  padding: 1.5rem; }
+  .team-member .role {
+    color: #d25b38;
+    font-family: "Anton";
+    font-size: 1.25rem; }
+
+@media (max-width: 576px) {
+  section#team {
+    padding: 1rem; }
+
+  .team-member {
+    padding: 1rem; } }
+/******PACKAGE SECTION*****/
+section#package {
+  padding: 3rem;
+  background-color: #f4f2f2; }
+
+.package-card {
+  text-align: center;
+  background-color: #fff; }
+  .package-card i {
+    font-size: 5rem;
+    margin: 1.5rem; }
+  .package-card h3 {
+    margin: 0; }
+  .package-card .subheading {
+    color: #d25b38;
+    font-family: "Anton";
+    font-size: 1.25rem; }
+  .package-card .description {
+    padding: 0 1.5rem; }
+  .package-card .price {
+    font-family: "Anton";
+    font-size: 3rem;
+    margin: 0; }
+  .package-card button {
+    margin: 1rem; }
+    .package-card button:hover {
+      background-color: #e6653f; }
+
+@media (max-width: 576px) {
+  section#package {
+    padding: 1rem; } }
+/******CONTACT SECTION*****/
+.contact-img {
+  background-image: url("../img/contact-img.png"); }
+
+.contact-info {
+  padding: 1.5rem; }
+  .contact-info i {
+    font-size: 3rem; }
+  .contact-info .contact-info-description h3 {
+    color: #d25b38;
+    font-family: "Anton"; }
+
+@media (max-width: 768px) {
+  .contact-img-section {
+    display: none; }
+
+  .contact-info {
+    padding: 0.5rem; } }
+/******FOOTER*****/
+footer {
+  padding: 3rem;
+  background-color: #f4f2f2;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  footer {
+    padding: 1rem; } }
